@@ -11,3 +11,30 @@ sbc \- simple base converter
 .SH DESCRIPTION
 sbc is a tool to convert between bases. The given value is converted and
 printed in decimal, hexadecimal, octal and binary.
+.P
+Even though the base may be specified as parameter, that's usually desumed by
+the format. See
+.B FORMATS
+below.
+.SH OPTIONS
+.TP
+.B \-v
+prints version information to stderr, then exits.
+.SH FORMATS
+.SS hex
+.TP
+.B 0x
+prefix for hexadecimal values
+.SS oct
+.TP
+.B 0
+prefix for octal values
+.SS bin
+.TP
+.B b
+suffix for binary values
+.SS dec
+.TP
+everything else is assumed to be decimal.
+.P
+If specified, the base has precedence against the format.
