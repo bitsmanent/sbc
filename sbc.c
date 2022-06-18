@@ -14,6 +14,10 @@ main(int argc, char *argv[]) {
 		printf("Usage: %s <value> [base]\n", argv[0]);
 		return 1;
 	}
+	if(!strcmp("-v", argv[1])) {
+		printf("sbc-%s\n", VERSION);
+		return 1;
+	}
 	if(argv[2])
 		base = atoi(argv[2]);
 	else {
